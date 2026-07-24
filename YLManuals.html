@@ -5,505 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manuales Yale - Soporte Técnico</title>
     <link rel="icon" href="./Images/icon.png" type="image/png">
-    <style>
-      :root {
-        --bg: #07111f;
-        --panel: #101c31;
-        --panel-2: #14263f;
-        --text: #f4f7fb;
-        --muted: #91a2bc;
-        --accent: #3ecf8e;
-        --accent-2: #4f8cff;
-        --border: rgba(255, 255, 255, 0.1);
-      }
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Roboto, Arial, sans-serif;
-        color: var(--text);
-        background: linear-gradient(135deg, var(--bg), #13253e 60%, #1c2f47);
-        min-height: 100vh;
-      }
-
-      .page {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 32px 20px 60px;
-      }
-
-      .hero {
-        background: rgba(16, 28, 49, 0.9);
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        padding: 28px 30px;
-        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
-        backdrop-filter: blur(14px);
-      }
-
-      .back-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: #9ff0c4;
-        text-decoration: none;
-        font-weight: 600;
-        margin-bottom: 14px;
-      }
-
-      .back-link:hover {
-        color: #ffffff;
-      }
-
-      .eyebrow {
-        display: inline-block;
-        background: rgba(62, 207, 142, 0.16);
-        color: #9ff0c4;
-        padding: 8px 12px;
-        border-radius: 999px;
-        font-size: 0.84rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        font-size: clamp(1.8rem, 3vw, 2.6rem);
-        margin: 12px 0 10px;
-      }
-
-      .hero p {
-        color: var(--muted);
-        line-height: 1.7;
-        font-size: 1rem;
-        margin: 0;
-        max-width: 780px;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 20px;
-        margin-top: 24px;
-      }
-
-      .family-card {
-        background: rgba(20, 38, 63, 0.95);
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 22px;
-        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
-      }
-
-      .family-card.real-living {
-        background: linear-gradient(135deg, rgba(255, 210, 90, 0.18), rgba(255, 182, 34, 0.08));
-        border-color: rgba(255, 199, 76, 0.32);
-      }
-
-      .family-card.assure1 {
-        background: linear-gradient(135deg, rgba(62, 207, 142, 0.16), rgba(62, 207, 142, 0.08));
-        border-color: rgba(62, 207, 142, 0.25);
-      }
-
-      .family-card.zwave {
-        background: linear-gradient(135deg, rgba(248, 228, 126, 0.2), rgba(248, 228, 126, 0.07));
-        border-color: rgba(220, 185, 70, 0.25);
-      }
-
-      .family-card.google {
-        background: linear-gradient(135deg, rgba(220, 86, 86, 0.16), rgba(220, 86, 86, 0.06));
-        border-color: rgba(220, 86, 86, 0.22);
-      }
-
-      .family-card.assure2 {
-        background: linear-gradient(135deg, rgba(164, 93, 255, 0.16), rgba(164, 93, 255, 0.07));
-        border-color: rgba(164, 93, 255, 0.22);
-      }
-
-      .family-card.code {
-        background: linear-gradient(135deg, rgba(26, 188, 156, 0.16), rgba(26, 188, 156, 0.07));
-        border-color: rgba(26, 188, 156, 0.22);
-      }
-
-      .family-card.collaborations {
-        background: linear-gradient(135deg, rgba(30, 30, 30, 0.6), rgba(20, 20, 20, 0.4));
-        border-color: rgba(255, 255, 255, 0.15);
-      }
-
-      .family-card h2 {
-        margin: 0 0 8px;
-        font-size: 1.16rem;
-      }
-
-      .family-card p {
-        margin: 0 0 14px;
-        color: var(--muted);
-        font-size: 0.95rem;
-        line-height: 1.6;
-      }
-
-      .links {
-        display: grid;
-        gap: 10px;
-      }
-
-      .links a,
-      .submenu-trigger {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        text-decoration: none;
-        color: var(--text);
-        padding: 11px 12px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        transition: transform 0.2s ease, background 0.2s ease;
-        cursor: pointer;
-        font: inherit;
-      }
-
-      .links a:hover,
-      .submenu-trigger:hover {
-        transform: translateY(-1px);
-        background: rgba(62, 207, 142, 0.16);
-      }
-
-      .links a span:last-child,
-      .submenu-trigger span:last-child {
-        color: #9ff0c4;
-        font-weight: 700;
-      }
-
-      .submenu {
-        display: none;
-        gap: 8px;
-        margin-top: 8px;
-        padding-left: 10px;
-      }
-
-      .submenu.open {
-        display: grid;
-      }
-
-      .submenu .submenu-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 10px 12px;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .submenu .submenu-item .model {
-        font-weight: 700;
-        color: #fff3bf;
-      }
-
-      .variant-grid {
-        display: grid;
-        gap: 8px;
-        margin-top: 8px;
-        padding-left: 16px;
-      }
-
-      .variant-card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 10px 12px;
-        border-radius: 10px;
-        background: rgba(0, 0, 0, 0.16);
-        border: 1px dashed rgba(255, 199, 76, 0.3);
-      }
-
-      .variant-card .variant-info {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-
-      .variant-card .variant-info strong {
-        color: #fff3bf;
-      }
-
-      .variant-card .variant-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 7px 10px;
-        border-radius: 8px;
-        background: rgba(255, 199, 76, 0.16);
-        color: #ffe8a3;
-        text-decoration: none;
-        font-size: 0.85rem;
-        font-weight: 700;
-        white-space: nowrap;
-      }
-
-      .placeholder-image {
-        width: 70px;
-        height: 46px;
-        border-radius: 8px;
-        border: 1px solid rgba(255, 199, 76, 0.25);
-        background: linear-gradient(135deg, rgba(255, 210, 90, 0.25), rgba(255, 255, 255, 0.06));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffe8a3;
-        font-size: 0.72rem;
-        font-weight: 700;
-        text-align: center;
-        padding: 4px;
-        overflow: hidden;
-        position: relative;
-        cursor: zoom-in;
-      }
-
-      .placeholder-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        transition: transform 0.2s ease;
-      }
-
-      .placeholder-image:hover img {
-        transform: scale(1.04);
-      }
-
-      .placeholder-image::after {
-        content: "Vista previa";
-        position: absolute;
-        inset: auto 6px 6px auto;
-        background: rgba(7, 17, 31, 0.8);
-        color: white;
-        padding: 4px 8px;
-        border-radius: 999px;
-        font-size: 0.68rem;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.2s ease;
-      }
-
-      .placeholder-image:hover::after {
-        opacity: 1;
-      }
-
-      .image-preview {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.96);
-        width: 250px;
-        height: auto;
-        border-radius: 14px;
-        border: 2px solid rgba(255, 199, 76, 0.35);
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-        opacity: 0;
-        pointer-events: none;
-        z-index: 1000;
-        transition: opacity 0.2s ease, transform 0.2s ease;
-        background: rgba(7, 17, 31, 0.95);
-        padding: 6px;
-      }
-
-      .image-preview.show {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-      }
-
-      .image-preview img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-      }
-
-      .gallery-modal {
-        position: fixed;
-        inset: 0;
-        background: rgba(7, 17, 31, 0.86);
-        backdrop-filter: blur(8px);
-        display: none;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-        padding: 24px;
-      }
-
-      .gallery-modal.show {
-        display: flex;
-      }
-
-      .gallery-modal .modal-content {
-        position: relative;
-        max-width: min(90vw, 420px);
-        width: 100%;
-        background: rgba(16, 28, 49, 0.96);
-        border: 1px solid rgba(255, 199, 76, 0.35);
-        border-radius: 18px;
-        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
-        padding: 24px;
-      }
-
-      .gallery-modal .close-btn {
-        position: absolute;
-        top: -15px;
-        right: -15px;
-        border: none;
-        background: rgba(255, 255, 255, 0.12);
-        color: white;
-        width: 34px;
-        height: 34px;
-        border-radius: 999px;
-        cursor: pointer;
-        font-size: 1rem;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      }
-
-      .gallery-modal .nav-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 38px;
-        height: 38px;
-        border: none;
-        background: rgba(255, 255, 255, 0.12);
-        color: white;
-        border-radius: 999px;
-        cursor: pointer;
-        font-size: 1.1rem;
-        z-index: 1;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      }
-
-      .gallery-modal .prev-btn {
-        left: -15px;
-      }
-
-      .gallery-modal .next-btn {
-        right: -15px;
-      }
-
-      .gallery-modal .carousel-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-      }
-
-      .gallery-modal .carousel-caption {
-        color: #f4f7fb;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        text-align: center;
-        padding: 8px 14px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.06);
-        width: fit-content;
-      }
-
-      .gallery-modal img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 12px;
-      }
-
-      .menu-stack {
-        display: grid;
-        gap: 16px;
-        margin-top: 24px;
-      }
-
-      .family-card {
-        padding: 0;
-        overflow: hidden;
-      }
-
-      .family-trigger {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-        padding: 22px;
-        border: 0;
-        background: transparent;
-        color: inherit;
-        text-align: left;
-        cursor: pointer;
-      }
-
-      .family-trigger:hover {
-        background: rgba(255, 255, 255, 0.06);
-      }
-
-      .family-copy {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-
-      .family-copy h2 {
-        margin: 0;
-      }
-
-      .family-copy p {
-        margin: 0;
-      }
-
-      .family-trigger .caret {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 34px;
-        height: 34px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.1);
-        color: #9ff0c4;
-        font-size: 1rem;
-        transition: transform 0.2s ease;
-        flex-shrink: 0;
-      }
-
-      .family-trigger[aria-expanded="true"] .caret {
-        transform: rotate(180deg);
-      }
-
-      .family-panel {
-        display: none;
-        padding: 0 22px 22px;
-      }
-
-      .family-panel.open {
-        display: block;
-      }
-
-      .note {
-        margin-top: 24px;
-        color: var(--muted);
-        font-size: 0.92rem;
-        text-align: center;
-      }
-
-      @media (max-width: 780px) {
-        .hero {
-          padding: 22px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
   </head>
-  <body>
+  <body class="yale-page">
     <div class="page">
       <header class="hero">
         <a class="back-link" href="index.html">← Volver al inicio</a>
@@ -511,7 +15,7 @@
         <h1>Menú de manuales por familia Yale</h1>
         <p>
           Explora los manuales organizados por generación o familia de candados Yale.
-          Cada sección incluye enlaces rápidos que puedes reemplazar con los PDF o páginas reales cuando los tengas listos.
+          Cada sección incluye enlaces rápidos con los PDF de los manuales oficiales de instalación, configuración y mantenimiento..
         </p>
       </header>
 
@@ -660,7 +164,7 @@
                 <div class="variant-grid">
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 216</strong>
+                      <strong>YRD216</strong>
                       <span>Versión 216</span>
                     </div>
                     <div class="placeholder-image">
@@ -670,7 +174,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 226</strong>
+                      <strong>YRD226</strong>
                       <span>Versión 226</span>
                     </div>
                     <div class="placeholder-image">
@@ -680,7 +184,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 246</strong>
+                      <strong>YRD246</strong>
                       <span>Versión 246</span>
                     </div>
                     <div class="placeholder-image">
@@ -690,7 +194,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 256</strong>
+                      <strong>YRDD256</strong>
                       <span>Versión 256</span>
                     </div>
                     <div class="placeholder-image">
@@ -708,7 +212,7 @@
                 <div class="variant-grid">
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 216</strong>
+                      <strong>YRL216</strong>
                       <span>Versión 216</span>
                     </div>
                     <div class="placeholder-image">
@@ -718,7 +222,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 226</strong>
+                      <strong>YRL226</strong>
                       <span>Versión 226</span>
                     </div>
                     <div class="placeholder-image">
@@ -728,7 +232,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 246</strong>
+                      <strong>YRL246</strong>
                       <span>Versión 246</span>
                     </div>
                     <div class="placeholder-image">
@@ -738,7 +242,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 256</strong>
+                      <strong>YRL256</strong>
                       <span>Versión 256</span>
                     </div>
                     <div class="placeholder-image">
@@ -756,7 +260,7 @@
                 <div class="variant-grid">
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 216</strong>
+                      <strong>YRC216</strong>
                       <span>Versión 216</span>
                     </div>
                     <div class="placeholder-image">
@@ -766,7 +270,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 226</strong>
+                      <strong>YRC226</strong>
                       <span>Versión 226</span>
                     </div>
                     <div class="placeholder-image">
@@ -776,7 +280,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 246</strong>
+                      <strong>YRC246</strong>
                       <span>Versión 246</span>
                     </div>
                     <div class="placeholder-image">
@@ -786,7 +290,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 256</strong>
+                      <strong>YRC256</strong>
                       <span>Versión 256</span>
                     </div>
                     <div class="placeholder-image">
@@ -857,7 +361,7 @@
           <div class="family-panel" id="collaborations-panel">
             <div class="links">
               <button class="submenu-trigger" type="button" data-target="yrm2x7-submenu" aria-expanded="false">
-                <span>YRM2X7</span><span>▾</span>
+                <span>ANDERSEN</span><span>▾</span>
               </button>
               <div class="submenu" id="yrm2x7-submenu">
                 <div class="variant-grid">
@@ -875,7 +379,7 @@
               </div>
 
               <button class="submenu-trigger" type="button" data-target="yrd5x0-submenu" aria-expanded="false">
-                <span>YRD5X0</span><span>▾</span>
+                <span>GOOGLE</span><span>▾</span>
               </button>
               <div class="submenu" id="yrd5x0-submenu">
                 <div class="variant-grid">
@@ -1063,11 +567,17 @@
             <span class="caret">▾</span>
           </button>
           <div class="family-panel" id="code-panel">
-            <div class="links">
-              <a href="#"><span>Manual de instalación</span><span>↗</span></a>
-              <a href="#"><span>Guía de códigos</span><span>↗</span></a>
-              <a href="#"><span>Programación de usuarios</span><span>↗</span></a>
-              <a href="#"><span>Soporte de teclado</span><span>↗</span></a>
+            <div class="variant-grid">
+              <div class="variant-card">
+                <div class="variant-info">
+                  <strong>YED210</strong>
+                  <span>Yale Code</span>
+                </div>
+                <div class="placeholder-image">
+                  <img src="Images/Locks/Yale Code/YED210.png" alt="YED210">
+                </div>
+                <a class="variant-link" href="Manuales/Yale Code/YED210.pdf" target="_blank" rel="noopener noreferrer">Ver manual</a>
+              </div>
             </div>
           </div>
         </section>
@@ -1086,175 +596,12 @@
         <button class="nav-btn prev-btn" id="prevGalleryBtn" type="button" aria-label="Imagen anterior">←</button>
         <div class="carousel-inner">
           <img id="galleryModalImg" src="" alt="Imagen ampliada">
-          <div class="carousel-caption" id="galleryModalTitle"></div>
+          <a class="carousel-caption" id="galleryModalTitle" href="#" aria-label="Ir al lock"></a>
         </div>
         <button class="nav-btn next-btn" id="nextGalleryBtn" type="button" aria-label="Siguiente imagen">→</button>
       </div>
     </div>
 
-    <script>
-      document.querySelectorAll('.family-trigger').forEach((button) => {
-        button.addEventListener('click', () => {
-          const targetId = button.getAttribute('data-target');
-          const panel = document.getElementById(targetId);
-
-          if (!panel) return;
-
-          const isOpen = panel.classList.contains('open');
-
-          document.querySelectorAll('.family-panel.open').forEach((openPanel) => {
-            if (openPanel !== panel) {
-              openPanel.classList.remove('open');
-              const siblingTrigger = document.querySelector(`[data-target="${openPanel.id}"]`);
-              if (siblingTrigger) {
-                siblingTrigger.setAttribute('aria-expanded', 'false');
-              }
-            }
-          });
-
-          panel.classList.toggle('open', !isOpen);
-          button.setAttribute('aria-expanded', String(!isOpen));
-        });
-      });
-
-      document.querySelectorAll('.submenu-trigger').forEach((button) => {
-        button.addEventListener('click', () => {
-          const targetId = button.getAttribute('data-target');
-          const submenu = document.getElementById(targetId);
-
-          if (!submenu) return;
-
-          const isOpen = submenu.classList.contains('open');
-
-          const parent = submenu.parentElement;
-          if (parent) {
-            parent.querySelectorAll('.submenu.open').forEach((openSubmenu) => {
-              if (openSubmenu !== submenu) {
-                openSubmenu.classList.remove('open');
-                const siblingTrigger = document.querySelector(`[data-target="${openSubmenu.id}"]`);
-                if (siblingTrigger) {
-                  siblingTrigger.setAttribute('aria-expanded', 'false');
-                }
-              }
-            }); 
-          }
-
-          submenu.classList.toggle('open', !isOpen);
-          button.setAttribute('aria-expanded', String(!isOpen));
-        });
-      });
-
-      const firstPanel = document.querySelector('.family-panel');
-      if (firstPanel) {
-        firstPanel.classList.add('open');
-        const firstTrigger = document.querySelector(`[data-target="${firstPanel.id}"]`);
-        if (firstTrigger) {
-          firstTrigger.setAttribute('aria-expanded', 'true');
-        }
-      }
-
-      const galleryModal = document.getElementById('galleryModal');
-      const galleryModalImg = document.getElementById('galleryModalImg');
-      const galleryModalTitle = document.getElementById('galleryModalTitle');
-      const closeGalleryBtn = document.getElementById('closeGalleryBtn');
-      const prevGalleryBtn = document.getElementById('prevGalleryBtn');
-      const nextGalleryBtn = document.getElementById('nextGalleryBtn');
-      const preview = document.getElementById('imagePreview');
-      const previewImg = document.getElementById('imagePreviewImg');
-
-      const galleryCards = Array.from(
-        document.querySelectorAll('.family-card.assure1 .placeholder-image, .family-card.assure2 .placeholder-image, .family-card.collaborations .placeholder-image, .family-card.real-living .placeholder-image')
-      );
-      const galleryItems = galleryCards.map((thumb) => {
-        const img = thumb.querySelector('img');
-        return {
-          src: img ? img.src : '',
-          title: img ? img.alt || '' : ''
-        };
-      });
-
-      let currentGalleryIndex = 0;
-
-      const updateGalleryModal = (index) => {
-        const item = galleryItems[index];
-        if (!item || !galleryModalImg || !galleryModalTitle) return;
-        galleryModalImg.src = item.src;
-        galleryModalImg.alt = item.title;
-        galleryModalTitle.textContent = item.title;
-        currentGalleryIndex = index;
-      };
-
-      const openGallery = (index) => {
-        if (!galleryModal || !galleryItems.length) return;
-        const normalizedIndex = (index + galleryItems.length) % galleryItems.length;
-        updateGalleryModal(normalizedIndex);
-        galleryModal.classList.add('show');
-        galleryModal.setAttribute('aria-hidden', 'false');
-      };
-
-      const changeGalleryItem = (direction) => {
-        if (!galleryModal || !galleryItems.length) return;
-        const nextIndex = (currentGalleryIndex + direction + galleryItems.length) % galleryItems.length;
-        updateGalleryModal(nextIndex);
-      };
-
-      galleryCards.forEach((thumb, index) => {
-        const img = thumb.querySelector('img');
-        if (!img) return;
-
-        thumb.addEventListener('mouseenter', () => {
-          previewImg.src = img.src;
-          previewImg.alt = img.alt;
-          preview.classList.add('show');
-          preview.setAttribute('aria-hidden', 'false');
-        });
-
-        thumb.addEventListener('mousemove', (event) => {
-          preview.style.left = `${event.clientX}px`;
-          preview.style.top = `${event.clientY}px`;
-        });
-
-        thumb.addEventListener('mouseleave', () => {
-          preview.classList.remove('show');
-          preview.setAttribute('aria-hidden', 'true');
-        });
-
-        thumb.addEventListener('click', () => {
-          openGallery(index);
-        });
-      });
-
-      const closeGallery = () => {
-        if (!galleryModal) return;
-        galleryModal.classList.remove('show');
-        galleryModal.setAttribute('aria-hidden', 'true');
-      };
-
-      if (prevGalleryBtn) {
-        prevGalleryBtn.addEventListener('click', (event) => {
-          event.stopPropagation();
-          changeGalleryItem(-1);
-        });
-      }
-
-      if (nextGalleryBtn) {
-        nextGalleryBtn.addEventListener('click', (event) => {
-          event.stopPropagation();
-          changeGalleryItem(1);
-        });
-      }
-
-      if (closeGalleryBtn) {
-        closeGalleryBtn.addEventListener('click', closeGallery);
-      }
-
-      if (galleryModal) {
-        galleryModal.addEventListener('click', (event) => {
-          if (event.target === galleryModal) {
-            closeGallery();
-          }
-        });
-      }
-    </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>

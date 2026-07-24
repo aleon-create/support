@@ -21,12 +21,12 @@
           </div>
         </div>
       </header>
-      <div>
-        <input type="text" placeholder="Busqueda rápida...">
-        <button>
-          <i></i>
-        </button>
-      </div>
+
+      <section class="quick-search" aria-label="Búsqueda rápida de cerraduras">
+        <label for="lockSearch">Buscar cerradura</label>
+        <input id="lockSearch" type="search" placeholder="Busqueda rápida..." autocomplete="off">
+        <div class="search-results" id="searchResults" aria-live="polite"></div>
+      </section>
 
       <main class="grid">
         <section class="brand-section masterlock">
