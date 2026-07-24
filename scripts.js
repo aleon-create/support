@@ -31,15 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!submenu) return;
 
       const isOpen = submenu.classList.contains('open');
-      document.querySelectorAll('.submenu.open').forEach((openSubmenu) => {
-        if (openSubmenu !== submenu) {
-          openSubmenu.classList.remove('open');
-          const siblingTrigger = document.querySelector(`[data-target="${openSubmenu.id}"]`);
-          if (siblingTrigger) {
-            siblingTrigger.setAttribute('aria-expanded', 'false');
+      const parent = submenu.parentElement;
+      if (parent) {
+        parent.querySelectorAll(':scope > .submenu.open').forEach((openSubmenu) => {
+          if (openSubmenu !== submenu) {
+            openSubmenu.classList.remove('open');
+            const siblingTrigger = document.querySelector(`[data-target="${openSubmenu.id}"]`);
+            if (siblingTrigger) {
+              siblingTrigger.setAttribute('aria-expanded', 'false');
+            }
           }
-        }
-      });
+        });
+      }
 
       submenu.classList.toggle('open', !isOpen);
       button.setAttribute('aria-expanded', String(!isOpen));
@@ -55,51 +58,139 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  const openHashLock = () => {
+    const lockId = decodeURIComponent(window.location.hash.slice(1));
+    if (!lockId.startsWith('lock-')) return;
+
+    const modelCard = document.getElementById(lockId);
+    if (!modelCard) return;
+
+    modelCard.closest('.family-panel')?.classList.add('open');
+    let submenu = modelCard.closest('.submenu');
+    while (submenu) {
+      submenu.classList.add('open');
+      const trigger = document.querySelector(`[data-target="${submenu.id}"]`);
+      if (trigger) trigger.setAttribute('aria-expanded', 'true');
+      submenu = submenu.parentElement?.closest('.submenu');
+    }
+
+    const familyPanel = modelCard.closest('.family-panel');
+    if (familyPanel) {
+      const familyTrigger = document.querySelector(`[data-target="${familyPanel.id}"]`);
+      if (familyTrigger) familyTrigger.setAttribute('aria-expanded', 'true');
+    }
+
+    modelCard.classList.remove('lock-highlight');
+    void modelCard.offsetWidth;
+    modelCard.classList.add('lock-highlight');
+    window.setTimeout(() => modelCard.classList.remove('lock-highlight'), 4200);
+    modelCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
+  document.querySelectorAll('.variant-card').forEach((card) => {
+    const model = card.querySelector('.variant-info strong')?.textContent.trim();
+    if (model) card.id = `lock-${model}`;
+  });
+  openHashLock();
+  window.addEventListener('hashchange', openHashLock);
+
   const galleryModal = document.getElementById('galleryModal');
   const galleryModalImg = document.getElementById('galleryModalImg');
+  const galleryModalTitle = document.getElementById('galleryModalTitle');
   const closeGalleryBtn = document.getElementById('closeGalleryBtn');
+  const prevGalleryBtn = document.getElementById('prevGalleryBtn');
+  const nextGalleryBtn = document.getElementById('nextGalleryBtn');
   const preview = document.getElementById('imagePreview');
   const previewImg = document.getElementById('imagePreviewImg');
 
-  const thumbnails = document.querySelectorAll('.placeholder-image');
-  if (thumbnails.length && preview && previewImg) {
-    thumbnails.forEach((thumb) => {
-      const img = thumb.querySelector('img');
-      if (!img) return;
+  const galleryCards = Array.from(document.querySelectorAll('.placeholder-image'));
+  const galleryItems = galleryCards.map((thumb) => {
+    const img = thumb.querySelector('img');
+    const card = thumb.closest('.variant-card');
+    return {
+      src: img?.src || '',
+      title: img?.alt || '',
+      lockId: card?.id || ''
+    };
+  });
+  let currentGalleryIndex = 0;
 
+  const updateGalleryModal = (index) => {
+    const item = galleryItems[index];
+    if (!item || !galleryModalImg) return;
+    galleryModalImg.src = item.src;
+    galleryModalImg.alt = item.title;
+    if (galleryModalTitle) {
+      galleryModalTitle.textContent = item.title;
+      galleryModalTitle.href = item.lockId ? `#${encodeURIComponent(item.lockId)}` : '#';
+      galleryModalTitle.setAttribute('aria-label', `Ir al lock ${item.title}`);
+    }
+    currentGalleryIndex = index;
+  };
+
+  const openGallery = (index) => {
+    if (!galleryModal || !galleryItems.length) return;
+    updateGalleryModal((index + galleryItems.length) % galleryItems.length);
+    galleryModal.classList.add('show');
+    galleryModal.setAttribute('aria-hidden', 'false');
+  };
+
+  const changeGalleryItem = (direction) => {
+    if (!galleryModal || !galleryItems.length) return;
+    updateGalleryModal((currentGalleryIndex + direction + galleryItems.length) % galleryItems.length);
+  };
+
+  galleryCards.forEach((thumb, index) => {
+    const img = thumb.querySelector('img');
+    if (!img) return;
+
+    if (preview && previewImg) {
       thumb.addEventListener('mouseenter', () => {
         previewImg.src = img.src;
         previewImg.alt = img.alt;
         preview.classList.add('show');
         preview.setAttribute('aria-hidden', 'false');
       });
+    }
 
-      thumb.addEventListener('mousemove', (event) => {
+    thumb.addEventListener('mousemove', (event) => {
+      if (preview) {
         preview.style.left = `${event.clientX}px`;
         preview.style.top = `${event.clientY}px`;
-      });
+      }
+    });
 
-      thumb.addEventListener('mouseleave', () => {
+    thumb.addEventListener('mouseleave', () => {
+      if (preview) {
         preview.classList.remove('show');
         preview.setAttribute('aria-hidden', 'true');
-      });
-
-      thumb.addEventListener('click', () => {
-        if (galleryModal && galleryModalImg) {
-          galleryModalImg.src = img.src;
-          galleryModalImg.alt = img.alt;
-          galleryModal.classList.add('show');
-          galleryModal.setAttribute('aria-hidden', 'false');
-        }
-      });
+      }
     });
-  }
+
+    thumb.addEventListener('click', () => openGallery(index));
+  });
 
   const closeGallery = () => {
     if (!galleryModal) return;
     galleryModal.classList.remove('show');
     galleryModal.setAttribute('aria-hidden', 'true');
   };
+
+  if (galleryModalTitle) {
+    galleryModalTitle.addEventListener('click', (event) => {
+      event.preventDefault();
+      closeGallery();
+      const targetHash = galleryModalTitle.getAttribute('href');
+      if (!targetHash || targetHash === '#') return;
+
+      if (window.location.hash === targetHash) {
+        openHashLock();
+        return;
+      }
+
+      window.location.hash = targetHash.slice(1);
+    });
+  }
 
   if (closeGalleryBtn) {
     closeGalleryBtn.addEventListener('click', closeGallery);
@@ -110,6 +201,20 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target === galleryModal) {
         closeGallery();
       }
+    });
+  }
+
+  if (prevGalleryBtn) {
+    prevGalleryBtn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      changeGalleryItem(-1);
+    });
+  }
+
+  if (nextGalleryBtn) {
+    nextGalleryBtn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      changeGalleryItem(1);
     });
   }
 
