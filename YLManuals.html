@@ -511,7 +511,7 @@
         <h1>Menú de manuales por familia Yale</h1>
         <p>
           Explora los manuales organizados por generación o familia de candados Yale.
-          Cada sección incluye enlaces rápidos que puedes reemplazar con los PDF o páginas reales cuando los tengas listos.
+          Cada sección incluye enlaces rápidos con los PDF de los manuales oficiales de instalación, configuración y mantenimiento..
         </p>
       </header>
 
@@ -660,7 +660,7 @@
                 <div class="variant-grid">
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 216</strong>
+                      <strong>YRD216</strong>
                       <span>Versión 216</span>
                     </div>
                     <div class="placeholder-image">
@@ -670,7 +670,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 226</strong>
+                      <strong>YRD226</strong>
                       <span>Versión 226</span>
                     </div>
                     <div class="placeholder-image">
@@ -680,7 +680,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 246</strong>
+                      <strong>YRD246</strong>
                       <span>Versión 246</span>
                     </div>
                     <div class="placeholder-image">
@@ -690,7 +690,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRD2X6 256</strong>
+                      <strong>YRDD256</strong>
                       <span>Versión 256</span>
                     </div>
                     <div class="placeholder-image">
@@ -708,7 +708,7 @@
                 <div class="variant-grid">
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 216</strong>
+                      <strong>YRL216</strong>
                       <span>Versión 216</span>
                     </div>
                     <div class="placeholder-image">
@@ -718,7 +718,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 226</strong>
+                      <strong>YRL226</strong>
                       <span>Versión 226</span>
                     </div>
                     <div class="placeholder-image">
@@ -728,7 +728,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 246</strong>
+                      <strong>YRL246</strong>
                       <span>Versión 246</span>
                     </div>
                     <div class="placeholder-image">
@@ -738,7 +738,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRL2X6 256</strong>
+                      <strong>YRL256</strong>
                       <span>Versión 256</span>
                     </div>
                     <div class="placeholder-image">
@@ -756,7 +756,7 @@
                 <div class="variant-grid">
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 216</strong>
+                      <strong>YRC216</strong>
                       <span>Versión 216</span>
                     </div>
                     <div class="placeholder-image">
@@ -766,7 +766,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 226</strong>
+                      <strong>YRC226</strong>
                       <span>Versión 226</span>
                     </div>
                     <div class="placeholder-image">
@@ -776,7 +776,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 246</strong>
+                      <strong>YRC246</strong>
                       <span>Versión 246</span>
                     </div>
                     <div class="placeholder-image">
@@ -786,7 +786,7 @@
                   </div>
                   <div class="variant-card">
                     <div class="variant-info">
-                      <strong>YRC2X6 256</strong>
+                      <strong>YRC256</strong>
                       <span>Versión 256</span>
                     </div>
                     <div class="placeholder-image">
@@ -1063,11 +1063,17 @@
             <span class="caret">▾</span>
           </button>
           <div class="family-panel" id="code-panel">
-            <div class="links">
-              <a href="#"><span>Manual de instalación</span><span>↗</span></a>
-              <a href="#"><span>Guía de códigos</span><span>↗</span></a>
-              <a href="#"><span>Programación de usuarios</span><span>↗</span></a>
-              <a href="#"><span>Soporte de teclado</span><span>↗</span></a>
+            <div class="variant-grid">
+              <div class="variant-card">
+                <div class="variant-info">
+                  <strong>YED210</strong>
+                  <span>Yale Code</span>
+                </div>
+                <div class="placeholder-image">
+                  <img src="Images/Locks/Yale Code/YED210.png" alt="YED210">
+                </div>
+                <a class="variant-link" href="Manuales/Yale Code/YED210.pdf" target="_blank" rel="noopener noreferrer">Ver manual</a>
+              </div>
             </div>
           </div>
         </section>
@@ -1153,6 +1159,38 @@
         }
       }
 
+      const openHashLock = () => {
+        const lockId = decodeURIComponent(window.location.hash.slice(1));
+        if (!lockId.startsWith('lock-')) return;
+
+        const modelCard = document.querySelector(`[id="${CSS.escape(lockId)}"]`);
+        if (!modelCard) return;
+
+        modelCard.closest('.family-panel')?.classList.add('open');
+        let submenu = modelCard.closest('.submenu');
+        while (submenu) {
+          submenu.classList.add('open');
+          const trigger = document.querySelector(`[data-target="${submenu.id}"]`);
+          if (trigger) trigger.setAttribute('aria-expanded', 'true');
+          submenu = submenu.parentElement?.closest('.submenu');
+        }
+
+        const familyPanel = modelCard.closest('.family-panel');
+        if (familyPanel) {
+          const familyTrigger = document.querySelector(`[data-target="${familyPanel.id}"]`);
+          if (familyTrigger) familyTrigger.setAttribute('aria-expanded', 'true');
+        }
+
+        modelCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      };
+
+      document.querySelectorAll('.variant-card').forEach((card) => {
+        const model = card.querySelector('.variant-info strong')?.textContent.trim();
+        if (model) card.id = `lock-${model}`;
+      });
+      openHashLock();
+      window.addEventListener('hashchange', openHashLock);
+
       const galleryModal = document.getElementById('galleryModal');
       const galleryModalImg = document.getElementById('galleryModalImg');
       const galleryModalTitle = document.getElementById('galleryModalTitle');
@@ -1163,7 +1201,7 @@
       const previewImg = document.getElementById('imagePreviewImg');
 
       const galleryCards = Array.from(
-        document.querySelectorAll('.family-card.assure1 .placeholder-image, .family-card.assure2 .placeholder-image, .family-card.collaborations .placeholder-image, .family-card.real-living .placeholder-image')
+        document.querySelectorAll('.family-card.assure1 .placeholder-image, .family-card.assure2 .placeholder-image, .family-card.collaborations .placeholder-image, .family-card.real-living .placeholder-image, .family-card.code .placeholder-image')
       );
       const galleryItems = galleryCards.map((thumb) => {
         const img = thumb.querySelector('img');
