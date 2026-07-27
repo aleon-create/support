@@ -1,0 +1,939 @@
+{
+  "families": [
+    {
+      "id": "assure2",
+      "title": "Assure 2",
+      "className": "assure2",
+      "description": "Series avanzadas con opciones de teclado y variantes especiales.",
+      "children": [
+        {
+          "type": "submenu",
+          "id": "yrd4x0-submenu",
+          "label": "YRD4X0",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRD410",
+              "description": "Versión estándar",
+              "image": "Images/Locks/Assure 2/YRD410.png",
+              "manual": "Manuales/Assure 2/YRD/YRD410-420.pdf",
+              "support": {
+                "summary": "YRD410 - Configuración inicial",
+                "body": "Assure 2: para YRD410, revisa el pairing inicial, la batería y la app para completar la instalación sin errores."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "YRD410-BLE-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "YRD410-BLE-0BP" },
+                    { "name": "Black Suede", "value": "YRD410-BLE-BSP" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD420",
+              "description": "Versión intermedia",
+              "image": "Images/Locks/Assure 2/YRD420.png",
+              "manual": "Manuales/Assure 2/YRD/YRD410-420.pdf",
+              "support": {
+                "summary": "YRD420 - Ajuste de acceso",
+                "body": "Assure 2: YRD420 suele requerir validar guest list, permisos Bluetooth y un ciclo de energía antes del primer uso."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "YRD420-BLE-620" },
+                    { "name": "Oil Rubbed Bronze", "value": "YRD420-BLE-0BP" },
+                    { "name": "Black Suede", "value": "YRD420-BLE-BSP" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD430",
+              "description": "Versión avanzada",
+              "image": "Images/Locks/Assure 2/YRD430.png",
+              "manual": "Manuales/Assure 2/YRD/YRD430-450.pdf",
+              "support": {
+                "summary": "YRD430 - Problemas de conexión",
+                "body": "Assure 2: con YRD430, revisa el alcance Bluetooth, el estado de la batería y la autenticación en la app si la cerradura no responde."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "YRD430-BLE-621" },
+                    { "name": "Oil Rubbed Bronze", "value": "YRD430-BLE-0BP" },
+                    { "name": "Black Suede", "value": "YRD430-BLE-BSP" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD450",
+              "description": "Versión premium",
+              "image": "Images/Locks/Assure 2/YRD450.png",
+              "manual": "Manuales/Assure 2/YRD/YRD430-450.pdf",
+              "support": {
+                "summary": "YRD450 - Reset y reemplazo",
+                "body": "Assure 2: YRD450 necesita revisar el reset físico y la batería antes de cambiar componentes o volver a programarlo."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "YRD450-BLE-622" },
+                    { "name": "Oil Rubbed Bronze", "value": "YRD450-BLE-0BP" },
+                    { "name": "Black Suede", "value": "YRD450-BLE-BSP" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "yrd4x0f-submenu",
+          "label": "YRD4X0-F",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRD410-F",
+              "description": "Versión con acabado F",
+              "image": "Images/Locks/Assure 2/YRD410-F.png",
+              "manual": "Manuales/Assure 2/YRD-F/YRD410-F.pdf",
+              "support": {
+                "summary": "YRD410-F - Instalación con acabado F",
+                "body": "Assure 2: YRD410-F usa el mismo flujo de instalación, pero confirma el acabado y el serial antes de ordenar repuestos."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Finish F", "value": "YRD410-F-BLE-619" },
+                    { "name": "Alternate finish", "value": "YRD410-F-0BP-619" },
+                    { "name": "Serial reference", "value": "YRD410-F-001" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD420-F",
+              "description": "Versión con acabado F",
+              "image": "Images/Locks/Assure 2/YRD420-F.png",
+              "manual": "Manuales/Assure 2/YRD-F/YRD420-F.pdf",
+              "support": {
+                "summary": "YRD420-F - Soporte de acabado F",
+                "body": "Assure 2: YRD420-F requiere revisar el módulo de acceso y el estado de la batería si el teclado o la app no responden."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Finish F", "value": "YRD420-F-BLE-620" },
+                    { "name": "Alternate finish", "value": "YRD420-F-0BP-620" },
+                    { "name": "Serial reference", "value": "YRD420-F-002" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD430-F",
+              "description": "Versión con acabado F",
+              "image": "Images/Locks/Assure 2/YRD430-F.png",
+              "manual": "Manuales/Assure 2/YRD-F/YRD430-F.pdf",
+              "support": {
+                "summary": "YRD430-F - Diagnóstico avanzado",
+                "body": "Assure 2: para YRD430-F, valida el alcance, el reset físico y la app antes de asignar un reemplazo."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Finish F", "value": "YRD430-F-BLE-621" },
+                    { "name": "Alternate finish", "value": "YRD430-F-0BP-621" },
+                    { "name": "Serial reference", "value": "YRD430-F-003" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD450-F",
+              "description": "Versión con acabado F",
+              "image": "Images/Locks/Assure 2/YRD450-F.png",
+              "manual": "Manuales/Assure 2/YRD-F/YRD450-F.pdf",
+              "support": {
+                "summary": "YRD450-F - Revisión premium",
+                "body": "Assure 2: YRD450-F suele mostrar fallos por batería o cobertura de Bluetooth; revisa ambos antes de cambiar componentes."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Finish F", "value": "YRD450-F-BLE-622" },
+                    { "name": "Alternate finish", "value": "YRD450-F-0BP-622" },
+                    { "name": "Serial reference", "value": "YRD450-F-004" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "yrd4x0n-submenu",
+          "label": "YRD4X0-N",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRD450-N",
+              "description": "Versión N",
+              "image": "Images/Locks/Assure 2/YRD450-N.png",
+              "manual": "Manuales/Assure 2/YRD-N/YRD450-N.pdf",
+              "support": {
+                "summary": "YRD450-N - Versión N",
+                "body": "Assure 2: YRD450-N requiere validar el estado físico del panel, la batería y la programación del usuario antes de cualquier cambio."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Version N", "value": "YRD450-N-BLE-622" },
+                    { "name": "Alternate finish", "value": "YRD450-N-0BP-622" },
+                    { "name": "Serial reference", "value": "YRD450-N-005" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assure1",
+      "title": "Assure 1",
+      "className": "assure1",
+      "description": "Recursos para configuración inicial, app y mantenimiento básico.",
+      "children": [
+        {
+          "type": "submenu",
+          "id": "yrd2x6-submenu",
+          "label": "YRD2X6",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRD216",
+              "description": "Versión 216",
+              "image": "Images/Locks/Assure 1/YRD216.png",
+              "manual": "Manuales/Assure 1/YRD/YRD216.pdf",
+              "support": {
+                "summary": "YRD216 - Inicio de operación",
+                "body": "Assure 1: YRD216 suele requerir validar la conexión inicial, el guest list y la batería antes de completar el primer setup."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Standard finish", "value": "YRD216-BLE-631" },
+                    { "name": "Alternate finish", "value": "YRD216-0BP-631" },
+                    { "name": "Serial reference", "value": "YRD216-006" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD226",
+              "description": "Versión 226",
+              "image": "Images/Locks/Assure 1/YRD226.png",
+              "manual": "Manuales/Assure 1/YRD/YRD226-620.pdf",
+              "support": {
+                "summary": "YRD226 - Soporte intermedio",
+                "body": "Assure 1: YRD226 suele mostrar problemas si la app no reconoce el lock; revisa los permisos y el rango Bluetooth."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Standard finish", "value": "YRD226-BLE-632" },
+                    { "name": "Alternate finish", "value": "YRD226-0BP-632" },
+                    { "name": "Serial reference", "value": "YRD226-007" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD246",
+              "description": "Versión 246",
+              "image": "Images/Locks/Assure 1/YRD246.png",
+              "manual": "Manuales/Assure 1/YRD/YRD246-256.pdf",
+              "support": {
+                "summary": "YRD246 - Validación de teclado",
+                "body": "Assure 1: YRD246 necesita revisar el teclado, la batería y la programación del usuario cuando no responde."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Standard finish", "value": "YRD246-BLE-633" },
+                    { "name": "Alternate finish", "value": "YRD246-0BP-633" },
+                    { "name": "Serial reference", "value": "YRD246-008" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD256",
+              "description": "Versión 256",
+              "image": "Images/Locks/Assure 1/YRD256.png",
+              "manual": "Manuales/Assure 1/YRD/YRD246-256.pdf",
+              "support": {
+                "summary": "YRD256 - Revisión avanzada",
+                "body": "Assure 1: YRD256 requiere revisar el reset físico y la batería antes de considerar un cambio de módulo."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Standard finish", "value": "YRD256-BLE-634" },
+                    { "name": "Alternate finish", "value": "YRD256-0BP-634" },
+                    { "name": "Serial reference", "value": "YRD256-009" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "yrl2x6-submenu",
+          "label": "YRL2X6",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRL216",
+              "description": "Versión 216",
+              "image": "Images/Locks/Assure 1/YRL216.png",
+              "manual": "Manuales/Assure 1/YRL/YRL216-236.pdf",
+              "support": {
+                "summary": "YRL216 - Configuración con llave",
+                "body": "Assure 1: YRL216 necesita validar la llave, el estado del panel y el setup inicial para evitar bloqueos."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Keyed finish", "value": "YRL216-BLE-641" },
+                    { "name": "Alternate finish", "value": "YRL216-0BP-641" },
+                    { "name": "Serial reference", "value": "YRL216-010" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRL226",
+              "description": "Versión 226",
+              "image": "Images/Locks/Assure 1/YRL226.png",
+              "manual": "Manuales/Assure 1/YRL/YRL226-256.pdf",
+              "support": {
+                "summary": "YRL226 - Diagnóstico con teclado",
+                "body": "Assure 1: YRL226 revisa el teclado, la batería y la app si no se completa el acceso."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Keyed finish", "value": "YRL226-BLE-642" },
+                    { "name": "Alternate finish", "value": "YRL226-0BP-642" },
+                    { "name": "Serial reference", "value": "YRL226-011" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRL246",
+              "description": "Versión 246",
+              "image": "Images/Locks/Assure 1/YRL246.png",
+              "manual": "Manuales/Assure 1/YRL/YRL226-256.pdf",
+              "support": {
+                "summary": "YRL246 - Revisión de acceso",
+                "body": "Assure 1: YRL246 suele requerir limpiar el contacto, validar la batería y revisar el modo de acceso."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Keyed finish", "value": "YRL246-BLE-643" },
+                    { "name": "Alternate finish", "value": "YRL246-0BP-643" },
+                    { "name": "Serial reference", "value": "YRL246-012" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRL256",
+              "description": "Versión 256",
+              "image": "Images/Locks/Assure 1/YRL256.png",
+              "manual": "Manuales/Assure 1/YRL/YRL226-256.pdf",
+              "support": {
+                "summary": "YRL256 - Reemplazo del módulo",
+                "body": "Assure 1: YRL256 necesita revisar el módulo, la batería y el reset si la cerradura no responde."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Keyed finish", "value": "YRL256-BLE-644" },
+                    { "name": "Alternate finish", "value": "YRL256-0BP-644" },
+                    { "name": "Serial reference", "value": "YRL256-013" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "yrc2x6-submenu",
+          "label": "YRC2X6",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRC216",
+              "description": "Versión 216",
+              "image": "Images/Locks/Assure 1/YRC216.png",
+              "manual": "Manuales/Assure 1/YRC/YRC216.pdf",
+              "support": {
+                "summary": "YRC216 - Inicio con código",
+                "body": "Assure 1: YRC216 necesita validar el programado de códigos y la batería cuando el acceso falla."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Code finish", "value": "YRC216-BLE-651" },
+                    { "name": "Alternate finish", "value": "YRC216-0BP-651" },
+                    { "name": "Serial reference", "value": "YRC216-014" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRC226",
+              "description": "Versión 226",
+              "image": "Images/Locks/Assure 1/YRC226.png",
+              "manual": "Manuales/Assure 1/YRC/YRC226-620.pdf",
+              "support": {
+                "summary": "YRC226 - Soporte de código",
+                "body": "Assure 1: YRC226 revisa el acceso por código, el estado de Bluetooth y el reset del dispositivo."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Code finish", "value": "YRC226-BLE-652" },
+                    { "name": "Alternate finish", "value": "YRC226-0BP-652" },
+                    { "name": "Serial reference", "value": "YRC226-015" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRC246",
+              "description": "Versión 246",
+              "image": "Images/Locks/Assure 1/YRC246.png",
+              "manual": "Manuales/Assure 1/YRC/YRC256-652.pdf",
+              "support": {
+                "summary": "YRC246 - Diagnóstico de acceso",
+                "body": "Assure 1: YRC246 suele fallar por batería o sincronización; valida ambos puntos antes de reemplazar."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Code finish", "value": "YRC246-BLE-653" },
+                    { "name": "Alternate finish", "value": "YRC246-0BP-653" },
+                    { "name": "Serial reference", "value": "YRC246-016" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRC256",
+              "description": "Versión 256",
+              "image": "Images/Locks/Assure 1/YRC256.png",
+              "manual": "Manuales/Assure 1/YRC/YRC256-652.pdf",
+              "support": {
+                "summary": "YRC256 - Revisión final",
+                "body": "Assure 1: YRC256 necesita revisar el reset, la batería y el registro de usuarios antes de cambiar componentes."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Code finish", "value": "YRC256-BLE-654" },
+                    { "name": "Alternate finish", "value": "YRC256-0BP-654" },
+                    { "name": "Serial reference", "value": "YRC256-017" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "builtin-zwave-submenu",
+          "label": "Built-In Z-Wave",
+          "children": [
+            {
+              "type": "submenu",
+              "id": "yrd1x0-submenu",
+              "label": "YRD1X0",
+              "children": [
+                {
+                  "type": "variant",
+                  "model": "YRD110",
+                  "description": "Próximamente",
+                  "image": "",
+                  "manual": "",
+                  "support": {
+                    "summary": "YRD110 - Próximamente",
+                    "body": "Próximamente disponible para soporte técnico y repuestos."
+                  },
+                  "replacementGroups": []
+                },
+                {
+                  "type": "variant",
+                  "model": "YRD120",
+                  "description": "Próximamente",
+                  "image": "",
+                  "manual": "",
+                  "support": {
+                    "summary": "YRD120 - Próximamente",
+                    "body": "Próximamente disponible para soporte técnico y repuestos."
+                  },
+                  "replacementGroups": []
+                }
+              ]
+            },
+            {
+              "type": "submenu",
+              "id": "yrd1x6-submenu",
+              "label": "YRD1X6",
+              "children": [
+                {
+                  "type": "variant",
+                  "model": "YRD136",
+                  "description": "Próximamente",
+                  "image": "",
+                  "manual": "",
+                  "support": {
+                    "summary": "YRD136 - Próximamente",
+                    "body": "Próximamente disponible para soporte técnico y repuestos."
+                  },
+                  "replacementGroups": []
+                },
+                {
+                  "type": "variant",
+                  "model": "YRD156",
+                  "description": "Próximamente",
+                  "image": "",
+                  "manual": "",
+                  "support": {
+                    "summary": "YRD156 - Próximamente",
+                    "body": "Próximamente disponible para soporte técnico y repuestos."
+                  },
+                  "replacementGroups": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collaborations",
+      "title": "Collaborations",
+      "className": "collaborations",
+      "description": "Recursos para modelos colaborativos y variantes especiales.",
+      "children": [
+        {
+          "type": "submenu",
+          "id": "yrm2x7-submenu",
+          "label": "ANDERSEN",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRM2X7 276",
+              "description": "Versión 276",
+              "image": "Images/Locks/Assure 1/YRM276.png",
+              "manual": "Manuales/Assure 1/YRM/YRM276.pdf",
+              "support": {
+                "summary": "YRM2X7 276 - Versión 276",
+                "body": "Collaborations: YRM2X7 276 requiere validar el panel, la batería y la programación de accesos antes de asignar un reemplazo."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Andersen finish", "value": "YRM276-BLE-681" },
+                    { "name": "Alternate finish", "value": "YRM276-0BP-681" },
+                    { "name": "Serial reference", "value": "YRM276-018" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "yrd5x0-submenu",
+          "label": "GOOGLE",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRD510",
+              "description": "Versión 510",
+              "image": "Images/Locks/Collabs/YRD510.png",
+              "manual": "Manuales/Collabs/YRD/YRD510.pdf",
+              "support": {
+                "summary": "YRD510 - Versión 510",
+                "body": "Collaborations: YRD510 requiere revisar la app, el alcance Bluetooth y la batería si el acceso falla."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Google finish", "value": "YRD510-BLE-691" },
+                    { "name": "Alternate finish", "value": "YRD510-0BP-691" },
+                    { "name": "Serial reference", "value": "YRD510-019" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD540",
+              "description": "Versión 540",
+              "image": "Images/Locks/Collabs/YRD540.png",
+              "manual": "Manuales/Collabs/YRD/YRD540.pdf",
+              "support": {
+                "summary": "YRD540 - Versión 540",
+                "body": "Collaborations: YRD540 suele necesitar un reset y revisión de batería antes de intercambiar módulos."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Google finish", "value": "YRD540-BLE-692" },
+                    { "name": "Alternate finish", "value": "YRD540-0BP-692" },
+                    { "name": "Serial reference", "value": "YRD540-020" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "emtek-submenu",
+          "label": "EMTEK",
+          "children": [
+            {
+              "type": "submenu",
+              "id": "emp-gen1-submenu",
+              "label": "EMPowered Gen 1",
+              "children": [
+                {
+                  "type": "variant",
+                  "model": "EMP-1-1",
+                  "description": "Interior Escutcheon",
+                  "image": "Images/Locks/Collabs/EMP-1-1.png",
+                  "manual": "Manuales/Collabs/EMTEK/Gen 1/EMP-1-1.pdf",
+                  "support": {
+                    "summary": "EMP-1-1 - Interior Escutcheon",
+                    "body": "Collaborations: EMP-1-1 requiere revisar el escudo interior, la batería y el montaje antes de reemplazar."
+                  },
+                  "replacementGroups": [
+                    {
+                      "title": "FULL LOCK",
+                      "items": [
+                        { "name": "Gen 1 escutcheon", "value": "EMP-1-1-701" },
+                        { "name": "Alternate finish", "value": "EMP-1-1-0BP-701" },
+                        { "name": "Serial reference", "value": "EMP-1-1-021" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "variant",
+                  "model": "EMP-1-2",
+                  "description": "Lock",
+                  "image": "Images/Locks/Collabs/EMP-1-2.png",
+                  "manual": "Manuales/Collabs/EMTEK/Gen 1/EMP-1-2.pdf",
+                  "support": {
+                    "summary": "EMP-1-2 - Lock",
+                    "body": "Collaborations: EMP-1-2 necesita revisar el módulo, el set de batería y la programación del acceso."
+                  },
+                  "replacementGroups": [
+                    {
+                      "title": "FULL LOCK",
+                      "items": [
+                        { "name": "Gen 1 lock", "value": "EMP-1-2-702" },
+                        { "name": "Alternate finish", "value": "EMP-1-2-0BP-702" },
+                        { "name": "Serial reference", "value": "EMP-1-2-022" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "submenu",
+              "id": "emp-gen2-submenu",
+              "label": "EMPowered Gen 2",
+              "children": [
+                {
+                  "type": "variant",
+                  "model": "EMP-2-2",
+                  "description": "F Key-Free",
+                  "image": "Images/Locks/Collabs/EMP-2-2.png",
+                  "manual": "Manuales/Collabs/EMTEK/Gen 2/EMP-2-2.pdf",
+                  "support": {
+                    "summary": "EMP-2-2 - F Key-Free",
+                    "body": "Collaborations: EMP-2-2 valida programación, batería y panel si falla el acceso sin llave."
+                  },
+                  "replacementGroups": [
+                    {
+                      "title": "FULL LOCK",
+                      "items": [
+                        { "name": "Gen 2 key-free", "value": "EMP-2-2-703" },
+                        { "name": "Alternate finish", "value": "EMP-2-2-0BP-703" },
+                        { "name": "Serial reference", "value": "EMP-2-2-023" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "variant",
+                  "model": "EMP-2-1",
+                  "description": "F Keyed",
+                  "image": "Images/Locks/Collabs/EMP-2-1.png",
+                  "manual": "Manuales/Collabs/EMTEK/Gen 2/EMP-2-1.pdf",
+                  "support": {
+                    "summary": "EMP-2-1 - F Keyed",
+                    "body": "Collaborations: EMP-2-1 revisa el cilindro, la batería y la app si el acceso por llave falla."
+                  },
+                  "replacementGroups": [
+                    {
+                      "title": "FULL LOCK",
+                      "items": [
+                        { "name": "Gen 2 keyed", "value": "EMP-2-1-704" },
+                        { "name": "Alternate finish", "value": "EMP-2-1-0BP-704" },
+                        { "name": "Serial reference", "value": "EMP-2-1-024" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "variant",
+                  "model": "EMP-2-3",
+                  "description": "Interior Escutcheon",
+                  "image": "Images/Locks/Collabs/EMP-2-3.png",
+                  "manual": "Manuales/Collabs/EMTEK/Gen 2/EMP-2-3.pdf",
+                  "support": {
+                    "summary": "EMP-2-3 - Interior Escutcheon",
+                    "body": "Collaborations: EMP-2-3 verifica el escudo interior, la batería y el montaje antes de cambiar componentes."
+                  },
+                  "replacementGroups": [
+                    {
+                      "title": "FULL LOCK",
+                      "items": [
+                        { "name": "Gen 2 escutcheon", "value": "EMP-2-3-705" },
+                        { "name": "Alternate finish", "value": "EMP-2-3-0BP-705" },
+                        { "name": "Serial reference", "value": "EMP-2-3-025" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-living",
+      "title": "Yale Real Living",
+      "className": "real-living",
+      "description": "Serie clásica para instalación y uso general en residencias.",
+      "children": [
+        {
+          "type": "submenu",
+          "id": "yrd2x0-submenu",
+          "label": "YRD2X0",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRD210",
+              "description": "Key + Buttons",
+              "image": "Images/Locks/Real Living/YRD210.png",
+              "manual": "Manuales/Real Living/YRD/YRD210.pdf",
+              "support": {
+                "summary": "YRD210 - Revisión de panel",
+                "body": "Real Living: YRD210 revisa la conexión del panel, la batería y el modo de acceso si se queda sin respuesta."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Touchscreen kit", "value": "YRD210-BLE-661" },
+                    { "name": "Alternate finish", "value": "YRD210-0BP-661" },
+                    { "name": "Serial reference", "value": "YRD210-018" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD220",
+              "description": "Key + Touchscreen",
+              "image": "Images/Locks/Real Living/YRD220.png",
+              "manual": "Manuales/Real Living/YRD/YRD220.pdf",
+              "support": {
+                "summary": "YRD220 - Soporte táctil",
+                "body": "Real Living: YRD220 requiere revisar el touchscreen, la batería y el alcance Bluetooth si falla la sesión."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Touchscreen kit", "value": "YRD220-BLE-672" },
+                    { "name": "Alternate finish", "value": "YRD220-0BP-672" },
+                    { "name": "Serial reference", "value": "YRD220-020" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRD240",
+              "description": "Keyless + Touchscreen",
+              "image": "Images/Locks/Real Living/YRD240.png",
+              "manual": "Manuales/Real Living/YRD/YRD240.pdf",
+              "support": {
+                "summary": "YRD240 - Revisión de panel",
+                "body": "Real Living: YRD240 revisa la conexión del panel, la batería y el modo de acceso si se queda sin respuesta."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Touchscreen kit", "value": "YRD240-BLE-661" },
+                    { "name": "Alternate finish", "value": "YRD240-0BP-661" },
+                    { "name": "Serial reference", "value": "YRD240-018" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "submenu",
+          "id": "yrl2x0-submenu",
+          "label": "YRL2X0",
+          "children": [
+            {
+              "type": "variant",
+              "model": "YRL210",
+              "description": "Key + Buttons",
+              "image": "Images/Locks/Real Living/YRL210.png",
+              "manual": "Manuales/Real Living/YRL/YRL210.pdf",
+              "support": {
+                "summary": "YRL210 - Configure con llave",
+                "body": "Real Living: YRL210 valida el estado del cilindro, la batería y la programación si no gestiona el acceso."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Keyed finish", "value": "YRL210-BLE-671" },
+                    { "name": "Alternate finish", "value": "YRL210-0BP-671" },
+                    { "name": "Serial reference", "value": "YRL210-019" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "variant",
+              "model": "YRL220",
+              "description": "Key + Touchscreen",
+              "image": "Images/Locks/Real Living/YRL220.png",
+              "manual": "Manuales/Real Living/YRL/YRL220.pdf",
+              "support": {
+                "summary": "YRL220 - Soporte táctil",
+                "body": "Real Living: YRL220 requiere revisar el touchscreen, la batería y el alcance Bluetooth si falla la sesión."
+              },
+              "replacementGroups": [
+                {
+                  "title": "FULL LOCK",
+                  "items": [
+                    { "name": "Touchscreen kit", "value": "YRL220-BLE-672" },
+                    { "name": "Alternate finish", "value": "YRL220-0BP-672" },
+                    { "name": "Serial reference", "value": "YRL220-020" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "title": "Yale Code",
+      "className": "code",
+      "description": "Recursos para modelos con teclado, códigos y administración de accesos.",
+      "children": [
+        {
+          "type": "variant",
+          "model": "YED210",
+          "description": "Yale Code",
+          "image": "Images/Locks/Yale Code/YED210.png",
+          "manual": "Manuales/Yale Code/YED210.pdf",
+          "support": {
+            "summary": "YED210 - Código de acceso",
+            "body": "Yale Code: YED210 concentra el soporte en códigos, permisos y panel para resolver fallos de acceso."
+          },
+          "replacementGroups": [
+            {
+              "title": "FULL LOCK",
+              "items": [
+                { "name": "Code kit", "value": "YED210-BLE-681" },
+                { "name": "Alternate finish", "value": "YED210-0BP-681" },
+                { "name": "Serial reference", "value": "YED210-021" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
