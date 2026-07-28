@@ -188,8 +188,7 @@
                 {
                   "title": "SINGLE ITEMS",
                   "items": [
-                    { "name": "BATTERY COVER", "value": "AYRD4X0-BATT" },
-                    { "name": "KEY CYLINDER", "value": "AYRD-400-KWKD-BSP" }
+                    { "name": "BATTERY COVER", "value": "AYRD4X0-BATT" }
                   ]
                 }
               ]
@@ -249,8 +248,7 @@
                 {
                   "title": "SINGLE ITEMS",
                   "items": [
-                    { "name": "BATTERY COVER", "value": "AYRD4X0-BATT" },
-                    { "name": "KEY CYLINDER", "value": "AYRD-400-KWKD-BSP" }
+                    { "name": "BATTERY COVER", "value": "AYRD4X0-BATT" }
                   ]
                 }
               ]
@@ -439,8 +437,7 @@
                 {
                   "title": "SINGLE ITEMS",
                   "items": [
-                    { "name": "BATTERY COVER", "value": "AYRD4X0-NF-BATT" },
-                    { "name": "KEY CYLINDER", "value": "AYRD-400-KWKD-BSP" }
+                    { "name": "BATTERY COVER", "value": "AYRD4X0-NF-BATT" }
                   ]
                 }
               ]
@@ -500,8 +497,7 @@
                 {
                   "title": "SINGLE ITEMS",
                   "items": [
-                    { "name": "BATTERY COVER", "value": "AYRD4X0-NF-BATT" },
-                    { "name": "KEY CYLINDER", "value": "AYRD-400-KWKD-BSP" }
+                    { "name": "BATTERY COVER", "value": "AYRD4X0-NF-BATT" }
                   ]
                 }
               ]
@@ -563,8 +559,7 @@
                 {
                   "title": "SINGLE ITEMS",
                   "items": [
-                    { "name": "BATTERY COVER", "value": "AYRD4X0-NF-BATT" },
-                    { "name": "KEY CYLINDER", "value": "AYRD-400-KWKD-BSP" }
+                    { "name": "BATTERY COVER", "value": "AYRD4X0-NF-BATT" }
                   ]
                 }
               ]
@@ -598,9 +593,45 @@
                 {
                   "title": "FULL LOCK",
                   "items": [
-                    { "name": "Standard finish", "value": "YRD216-BLE-631" },
-                    { "name": "Alternate finish", "value": "YRD216-0BP-631" },
-                    { "name": "Serial reference", "value": "YRD216-006" }
+                    { "name": "Satin Nickel", "value": "YRD216-NR-619"},
+                    { "name": "Oil Rubbed Bronze", "value": "YRD216-NR-0BP"}
+                  ]
+                },
+                {
+                  "title": "EXTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD216-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD216-0BP" }
+                  ]
+                },
+                {
+                  "title": "INTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD216-619-INT" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD216-0BP-INT" }
+                  ]
+                },
+                {
+                  "title": "DEADBOLT LATCH",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRDB2-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRDB2-0BP" },
+                    { "name": "Drive-In Latch", "value": "AYRDB-DRIVE" }
+                  ]
+                },
+                {
+                  "title": "SCREW PACK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRD2X6-SCREW-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRD2X6-SCREW-0BP" }
+                  ]
+                },
+                {
+                  "title": "SINGLE ITEMS",
+                  "items": [
+                    { "name": "BATTERY COVER", "value": "AYR2X6-BATT" },
+                    { "name": "KEY CYLINDER SATIN NICKEL", "value": "AYRD200-KWKD-26" },
+                    { "name": "KEY CYLINDER OIL RUBBED BRONZE", "value": "AYRD200-KWKD-10BP" }
                   ]
                 }
               ]
@@ -619,9 +650,51 @@
                 {
                   "title": "FULL LOCK",
                   "items": [
-                    { "name": "Standard finish", "value": "YRD226-BLE-632" },
-                    { "name": "Alternate finish", "value": "YRD226-0BP-632" },
-                    { "name": "Serial reference", "value": "YRD226-007" }
+                    { "name": "Satin Nickel", "value": "YRD226-NR-619"},
+                    { "name": "Oil Rubbed Bronze", "value": "YRD226-NR-0BP"},
+                    { "name": "Black Suede", "value": "YRD226-NR-BSP"}
+                  ]
+                },
+                {
+                  "title": "EXTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD226-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD226-0BP" },
+                    { "name": "Black Suede", "value": "X-YRD226-BSP" }
+                  ]
+                },
+                {
+                  "title": "INTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD226-619-INT" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD226-0BP-INT" },
+                    { "name": "Black Suede", "value": "X-YRD226-BSP-INT" }
+                  ]
+                },
+                {
+                  "title": "DEADBOLT LATCH",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRDB2-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRDB2-0BP" },
+                    { "name": "Black Suede", "value": "AYRDB2-BSP" },
+                    { "name": "Drive-In Latch", "value": "AYRDB-DRIVE" }
+                  ]
+                },
+                {
+                  "title": "SCREW PACK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRD2X6-SCREW-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRD2X6-SCREW-0BP" },
+                    { "name": "Black Suede", "value": "AYRD2X6-SCREW-BSP" }
+                  ]
+                },
+                {
+                  "title": "SINGLE ITEMS",
+                  "items": [
+                    { "name": "BATTERY COVER", "value": "AYR2X6-BATT" },
+                    { "name": "KEY CYLINDER SATIN NICKEL", "value": "AYRD200-KWKD-26" },
+                    { "name": "KEY CYLINDER OIL RUBBED BRONZE", "value": "AYRD200-KWKD-10BP" },
+                    { "name": "KEY CYLINDER BLACK SUEDE", "value": "AYRD200-KWKD-BSP" }
                   ]
                 }
               ]
@@ -640,9 +713,48 @@
                 {
                   "title": "FULL LOCK",
                   "items": [
-                    { "name": "Standard finish", "value": "YRD246-BLE-633" },
-                    { "name": "Alternate finish", "value": "YRD246-0BP-633" },
-                    { "name": "Serial reference", "value": "YRD246-008" }
+                    { "name": "Satin Nickel", "value": "YRD246-NR-619"},
+                    { "name": "Oil Rubbed Bronze", "value": "YRD246-NR-0BP"},
+                    { "name": "Black Suede", "value": "YRD246-NR-BSP"}
+                  ]
+                },
+                {
+                  "title": "EXTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD246-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD246-0BP" },
+                    { "name": "Black Suede", "value": "X-YRD246-BSP" }
+                  ]
+                },
+                {
+                  "title": "INTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD246-619-INT" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD246-0BP-INT" },
+                    { "name": "Black Suede", "value": "X-YRD246-BSP-INT" }
+                  ]
+                },
+                {
+                  "title": "DEADBOLT LATCH",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRDB2-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRDB2-0BP" },
+                    { "name": "Black Suede", "value": "AYRDB2-BSP" },
+                    { "name": "Drive-In Latch", "value": "AYRDB-DRIVE" }
+                  ]
+                },
+                {
+                  "title": "SCREW PACK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRD2X6-SCREW-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRD2X6-SCREW-0BP" },
+                    { "name": "Black Suede", "value": "AYRD2X6-SCREW-BSP" }
+                  ]
+                },
+                {
+                  "title": "SINGLE ITEMS",
+                  "items": [
+                    { "name": "BATTERY COVER", "value": "AYR2X6-BATT" }
                   ]
                 }
               ]
@@ -661,9 +773,48 @@
                 {
                   "title": "FULL LOCK",
                   "items": [
-                    { "name": "Standard finish", "value": "YRD256-BLE-634" },
-                    { "name": "Alternate finish", "value": "YRD256-0BP-634" },
-                    { "name": "Serial reference", "value": "YRD256-009" }
+                    { "name": "Satin Nickel", "value": "YRD256-NR-619"},
+                    { "name": "Oil Rubbed Bronze", "value": "YRD256-NR-0BP"},
+                    { "name": "Black Suede", "value": "YRD256-NR-BSP"}
+                  ]
+                },
+                {
+                  "title": "EXTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD256-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD256-0BP" },
+                    { "name": "Black Suede", "value": "X-YRD256-BSP" }
+                  ]
+                },
+                {
+                  "title": "INTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD256-619-INT" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD256-0BP-INT" },
+                    { "name": "Black Suede", "value": "X-YRD256-BSP-INT" }
+                  ]
+                },
+                {
+                  "title": "DEADBOLT LATCH",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRDB2-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRDB2-0BP" },
+                    { "name": "Black Suede", "value": "AYRDB2-BSP" },
+                    { "name": "Drive-In Latch", "value": "AYRDB-DRIVE" }
+                  ]
+                },
+                {
+                  "title": "SCREW PACK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRD2X6-SCREW-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRD2X6-SCREW-0BP" },
+                    { "name": "Black Suede", "value": "AYRD2X6-SCREW-BSP" }
+                  ]
+                },
+                {
+                  "title": "SINGLE ITEMS",
+                  "items": [
+                    { "name": "BATTERY COVER", "value": "AYR2X6-BATT" }
                   ]
                 }
               ]
@@ -948,9 +1099,41 @@
                 {
                   "title": "FULL LOCK",
                   "items": [
-                    { "name": "Andersen finish", "value": "YRM276-BLE-681" },
-                    { "name": "Alternate finish", "value": "YRM276-0BP-681" },
-                    { "name": "Serial reference", "value": "YRM276-018" }
+                    { "name": "Satin Nickel", "value": "YRM276-NR-619"},
+                    { "name": "Black", "value": "YRM276-NR-BLK"},
+                    { "name": "White", "value": "YRM276-NR-WHT"}
+                  ]
+                },
+                {
+                  "title": "EXTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRM276-619" },
+                    { "name": "Black", "value": "X-YRM276-BLK" },
+                    { "name": "White", "value": "X-YRM276-WHT" }
+                  ]
+                },
+                {
+                  "title": "INTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRM276-619-INT" },
+                    { "name": "Black", "value": "X-YRM276-BLK-INT" },
+                    { "name": "White", "value": "X-YRM276-WHT-INT" }
+                  ]
+                },                
+                {
+                  "title": "SCREW PACK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRM-SCREW-619" },
+                    { "name": "Black", "value": "AYRM-SCREW-BLK" },
+                    { "name": "White", "value": "AYRM-SCREW-WHT" }
+                  ]
+                },
+                {
+                  "title": "SINGLE ITEMS",
+                  "items": [
+                    { "name": "BATTERY COVER", "value": "AYM-BATT" },
+                    { "name": "DPS Kit", "value": "AYRM276-FULL-HKIT" },
+                    { "name": "SPACERS", "value": "AYRM270-HKIT" }
                   ]
                 }
               ]
@@ -997,9 +1180,48 @@
                 {
                   "title": "FULL LOCK",
                   "items": [
-                    { "name": "Google finish", "value": "YRD540-BLE-692" },
-                    { "name": "Alternate finish", "value": "YRD540-0BP-692" },
-                    { "name": "Serial reference", "value": "YRD540-020" }
+                    { "name": "Satin Nickel", "value": "RB-YRD540-WV-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "RB-YRD540-WV-0BP" },
+                    { "name": "Black Suede", "value": "RB-YRD540-WV-BSP" }
+                  ]
+                },
+                {
+                  "title": "EXTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "X-YRD540-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "X-YRD540-0BP" },
+                    { "name": "Black Suede", "value": "X-YRD540-BSP" }
+                  ]
+                },
+                {
+                  "title": "INTERIOR ESCUTCHEON",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "YRD5X0-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "YRD5X0-0BP" },
+                    { "name": "Black Suede", "value": "YRD5X0-BSP" }
+                  ]
+                },
+                {
+                  "title": "DEADBOLT LATCH",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRDB2-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRDBB2-0BP" },
+                    { "name": "Black Suede", "value": "AYRDBB2-BSP" },
+                    { "name": "Drive-In Latch", "value": "AYRDB-DRIVE" }
+                  ]
+                },
+                {
+                  "title": "SCREW PACK",
+                  "items": [
+                    { "name": "Satin Nickel", "value": "AYRD540-SCREW-619" },
+                    { "name": "Oil Rubbed Bronze", "value": "AYRD540-SCREW-0BP" },
+                    { "name": "Black Suede", "value": "AYRD540-SCREW-BSP" }
+                  ]
+                },
+                {
+                  "title": "SINGLE ITEMS",
+                  "items": [
+                    { "name": "BATTERY COVER", "value": "AYR540-BATT" }
                   ]
                 }
               ]
